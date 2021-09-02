@@ -1,0 +1,11 @@
+<!--
+    Date of creation: 5/II/2018
+    Application created by: Miguel Angel Rodriguez <duckfrost@theconstructsim.com>
+    The Construct http://www.theconstructsim.com
+    License LGPLV3 << Basically means you can do whatever you want with this!
+-->
+
+<launch>
+    <param name="use_sims_time" value="false"/>
+    <node pkg="a1_training" name="a1_gym" type="start_training.py" output="screen"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="a1_training" name="a1_gym" type="test.py" output="screen"/>
+</launch>

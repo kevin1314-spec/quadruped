@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+        <arg name="x" default="0.0" />
+        <arg name="y" default="0.0" />
+        <arg name="z" default="1.0" />
+        <arg name="roll" default="0"/>
+        <arg name="pitch" default="0"/>
+        <arg name="yaw" default="0.0" />
+        <arg name="urdf_robot_file" default="$(find a1_sims)/urdf/a1.urdf" />
+        <arg name="robot_name" default="a1" />
+        <param name="robot_description" textfile='$(find a1_sims)/urdf/a1.urdf' />
+
+        <node pkg="gazebo_ros" type="spawn_model" name="urdf_spawner" respawn="false" output="screen"
+              args="-urdf -z 0.2 -model a1_gazebo -param robot_description -unpause"/>
+</launch>
